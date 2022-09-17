@@ -6,7 +6,7 @@ cost_per_day = 100
 
 #function to add new Pokemon by input
 def addpokemon():
-        pokemon_add = input(f"Enter the name of your pokemon :")
+        pokemon_add = input(f"Enter the name of your pokemon: ")
         pokemon.append(pokemon_add)
 
 
@@ -52,5 +52,5 @@ def poketotalbill():
         for count in range(len(poke_visits)):
                 result = poke_visits[count] * cost_per_day
                 print(f'{pokemon[count]} has visited {poke_visits[count]} times.')
-                print(f'With a daily rate of {cost_per_day}, the total bill is {result}')
+                print(f'With a daily rate of {cost_per_day}$, the total bill is {result}$')
 poketotalbill()
